@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[left=3cm,top=3cm,right=3cm,nohead,bottom=3cm]{geometry}
+\begin{document}
+
+
+
+
+\title{Physics Exam I Corrections}
+\author{Amanda Mengotto}
+\maketitle
+
+1) Convert the following to standard SI units. State the dimension.
+
+c. $\frac{3.33 Nms}{h} = \frac{3.33 Nms}{6.63 x 10^{-34} Js} = 5.02 x 10^{33}$ No units, Dimensionless. 
+
+d. $\frac{1.0eV}{watts} = \frac{1.6 x 10^{-19} Coulumb Volt}{1 Joule/second} = 1.6 x 10^{-19} seconds$, Dimension = T.
+
+\bigskip
+
+2) A water balloon is dropped from 14m above ground level.
+
+d. Determine the position 0.2 seconds before hitting the ground. 
+
+Time to hit the ground: 
+\[0 = 14-4.9^2\]
+\[t = \sqrt{\frac{14}{4.9}} = 1.69s - 0.2s = 1.49s\]
+
+Position at this time:
+\[ y(t) = y_0 + V_{0}t + \frac{1}{2} a_y t^2 \]
+\[y(1.49) = 14 - 4.9(1.49)^2 = 3.12 meters\]
+
+\bigskip
+3) A toy rocket is shot straight up from the ground and reaches a max height of 20m. The rocket  \par is then shot at the same speed at 25 degrees above the ground. 
+
+a. Determine the horizontal and vertical components of $V_0$. 
+
+To determine $V_0$:
+\[ V^2 - V_0^2 = 2ad\]
+\par At the peak, $V = 0$, $a = -9.8m/s^2$, and $d=20m$.
+\[0-V_0^2 = 2(-9.8)(20)\]
+\[V_0 = 19.8 m/s\]
+
+\par Now we can solve for $V_{0x}$ and $V_{0y}$
+\begin{center}
+$V_{0x} = V_0 cos(\theta)$    and   $V_{0y} = V_0 sin(\theta)$
+
+$V_{0x} = 19.8 cos(25)$    and   $V_{0y} = 19.8 sin(25)$
+
+$V_{0x} = 17.9 $ m/s    and   $V_{0y} = 8.3 $ m/s
+\end{center}
+
+b. Determine the average velocity for the flight.
+\[<\vec{v}> = \begin{bmatrix} <v_x> \\ <v_y> \end{bmatrix} \]
+\[<v_y> = \frac{\Delta y}{\Delta t} <v_x> = \frac{\Delta x}{\Delta t} \]
+\[<\vec{v}> = \begin{bmatrix} 17.9 \\ 0 \end{bmatrix} m/s\]
+
+c. Determine the maximum height and range of the flight.
+\[V_y^2 - V_{0y} = 2a(\Delta y)\]
+\begin{center} At the peak: \end{center}
+\[ 0 - (8.375)^2 = 2(-9.8) \Delta y \]
+\[ 70.1406 = 19.6 \Delta y\]
+\[ Y_{max}= 3.58 m\]
+\begin{center} For the range: \end{center}
+\[\Delta x = <V_x> t_{flight}\]
+\[\Delta x = 17.9(1.71) = 30.6m\]
+
+d. Determine the velocity (magnitude and direction) for the rocket 1.0 second before it hits the ground.
+
+\[t = 1.71-1 = 0.71s\]
+\[\hat{V}(0.71) = \begin{bmatrix} 17.9 \\ 1.42 \end{bmatrix}\]
+\[V = \sqrt{(17.9)^2 + (1.42)^2} = 17.9 m/s\]
+
+4.  A rad car races around a circular track at a radius of 40 meters and a speed of 50 m/s. The car \par starts at zero angular position. The car then increases its speed (at a constant rate) from 50 m/s \par to 60 m/s over 2 seconds.
+
+c. Determine the magnitude of the acceleration half way through this maneuver. 
+\[\hat{a} = a_{rad} \hat{r} + a_{cent} \hat{r} + a_{Cor} \hat{\theta} + a_{tan} \hat{\theta}\]
+\begin{center} The car is not moving in the radial direction, so \end{center}
+\[\hat{a} = \frac{-v^2}{r} \hat{r} + a_{tan} \hat{\theta}\]
+\begin{center} The velocity halfway through  = 55 m/s. \end{center}
+\[\hat{a} = \frac{-55^2}{40} \hat{r} + 5 \hat{\theta} \]
+\[\hat{a} = 75.6 \hat{r} + 5\hat{\theta}\]
+\[a= \sqrt{(75.6)^2 + (5)^2} = 75.8 m/s^2\]
+
+d. Determine the magnitude of the displacement during the 2 second maneuver. 
+\par Displacement is the difference between the starting and ending position, not distance traveled. 
+\[S = \theta r\]
+\[\frac{110}{40} = 2.75 rad = \theta \]
+\[\hat{r}_{final} = \begin{bmatrix} 40 cos(2.75 rad) \\ 40 sin(2.75 rad) \end{bmatrix}\]
+\[\hat{r}_{initial} = \begin{bmatrix} 40 \\ 0 \end{bmatrix}\]
+\[\Delta \hat{r} = \begin{bmatrix} \hat{r}_f - \hat{r}_i \\ \hat{r}_f - \hat{r}_i \end{bmatrix} = 40 \begin{bmatrix} cos(2.75 rad) -1 \\ sin(2.75 rad) \end{bmatrix}\]
+\[ |\Delta \hat{r}|  = 40\sqrt{(cos(2.75 rad))^2 + (sin(2.75 rad))^2} = 78.4 m \]
+
+
+
+\end{document}
