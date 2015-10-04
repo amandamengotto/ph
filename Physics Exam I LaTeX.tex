@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[left=5cm,top=5cm,right=5cm,nohead,nofoot]{geometry}
+\begin{document}
+
+
+
+\title{Passing Cars}
+\author{Amanda Mengotto}
+\maketitle
+
+\begin{abstract}
+This document is created to decscribe a passing maneuver in terms of motion and kinematics for two cars racing around a track. Each car is 2.0 meters wide and 5.0 meters long. They travel at a speed of 50 m/s in a circle with a radius of 40 meters, with the rear car 1.0 meter behind the rear bumper of the front car. The rear car can perform constant acceleration from 50 m/s to 60 m/s in two seconds, stay at 60 m/s for two seconds, and then return at a constant rate to 50 m/s over the next 2 seconds. This document discusses the physical significance of each of the four acceleration terms from the polar coordinate representation.
+\end{abstract}
+\section{Known Variables}
+We must first list the quantities we know, as they are given directly or indirectly in the problem itself.
+\begin{itemize}
+\item Car 1 $V_0 = 50 m/s$
+\item Car 2 $V_0 = 50 m/s$
+\item Radius = $40m$
+\item Car 1 Width = $2.0m$
+\item Car 2 Width = $2.0m$
+\item Car 1 Length = $5.0m$
+\item Car 2 Length = $5.0m$
+\item Car 1 $\omega_i = 1.25 rad/sec$
+\item Car 2 $\omega_i = 1.25 rad/sec$
+\end{itemize}
+
+\section{Discussion}
+
+Because both cars are in the inner lane of the race track, car 2 must first transition to the outer lane to pass car 1. This means car  2 must move towards the outside of the circle at least 2.0m.
+
+To maintain its distance behind car 1, car 2 must accelerate or it will fall further behind car 1. It must accelerate in the $\hat{\theta}$ direction to maintain the same $\omega$ as car 1. This acceleration is called the coriolis acceleration. 
+
+The coreolis acceleration can be written as
+\[ \frac{2V_{rad}V_{tan}} {r}  \hat{\theta}\]
+
+When car 2 passes car 1, its $\omega$ value must first increase to be greater than that of car 1's $\omega$ value. The $\omega$ value can be written as  
+\[\omega = \frac{\delta \theta} {\delta t}\]
+
+When the $\omega$ value is non-constant, there is a non-zero value for $\alpha$. The acceleration to pass car 1 is also in the $\hat{\theta}$ direction, and is written as 
+
+\[ \vec{a} = a_{tan} \hat{\theta} = r\alpha\]
+
+Once car 2 is in the outside lane and in front of car 1, it can then decrease its acceleration in the $\hat{\theta}$ direction.
+
+To summarize the process of car 2 passing car 1, car 2 must first move out to the outer lane, and then accelerate to catch up and pass car 1, and finally decelerate as it returns to the inner lane of the track. 
+
+\section{Calculations}
+
+Car 2 is able to accelerate from 50 m/s to 60 m/s in 2 seconds. This is an average velocity of 55 m/s and an average acceleration of $5 m/s^2$. If car 2 were to move 2m towards the outside of the track while accelerating at $5 m/s^2$, we must determine its total acceleration as it transitions to the outside lane. 
+
+\[\hat{a} = a_{centripetal} + a_{Coriolis} = \frac{v_{tan}^2}{r}(-\hat{r})+ \frac{2v_r v_{tan}} {r}(\hat{\theta}) \]
+\[ \hat{a} = \frac{60^2}{40} (-\hat{r}) + \frac{(2)(1)(60)}{40}(\hat{\theta}) \]
+\[ \hat{a} = -90 \hat{r} + 3 \hat{\theta} \]
+\[ a = \sqrt{(-90)^2 + (3)^2} = 90 m/s^2 \]
+
+We must also determine the total acceleration for car 1, which car 2 is attempting to pass. 
+
+\[\hat{a} = a_{centripetal} + a_{Coriolis} = \frac{v_{tan}^2}{r}(-\hat{r})+ \frac{2v_r v_{tan}} {r}(\hat{\theta}) \]
+\[\hat{a} = \frac{50^2}{40} (-\hat{r}) + \frac{(2)(0)(50)}{40}(\hat{\theta}) = -6.25 \hat{r} \]
+
+\[ a = \sqrt{(-6.25)^2} = 6.25 m/s^2 \]
+
+
+Next, car 2 must accelerate to pass car 1. The $\omega$ value for car 2 must become greater than the $\omega$ value for car 1 to accomplish this. 
+\[\omega = \frac{\delta \theta} {\delta t}\]
+We know that car 1 has a $\omega$ equal to 1.25 rad/sec. We know that $\Delta \theta$ is the same for both cars, as they are on the same track. So the time to travel around the track must decrease for car 2 in order to make its $\omega$ value greater.
+
+\bigskip
+
+
+Finally, car 2 can slow down once it has passed car 1. This would lead to a decrease in velocity in the  $\hat{\theta}$ direction for car 2. It is essentially the opposite of the acceleration maneuver made in the first step, when the car moved to the outer lane.
+\[\hat{a} = a_{centripetal} + a_{Coriolis} = \frac{v_{tan}^2}{r}(-\hat{r})+ \frac{2v_r v_{tan}} {r}(\hat{\theta}) \]
+\[ \hat{a} = \frac{50^2}{40} (-\hat{r}) + \frac{(2)(1)(50)}{40}(\hat{\theta}) \]
+\[ \hat{a} = -62.5 \hat{r} + 2.5 \hat{\theta} \]
+\[ a = \sqrt{(-62.5)^2 + (2.5)^2} = 62.5 m/s^2 \]
+
+Car 1 would maintain a constant velocity and constant angular acceleration throughout. 
+
+
+
+\end{document}
